@@ -1,0 +1,522 @@
+
+/*css resset*/
+*{
+  font-family: "微软雅黑";
+}
+h4{
+  margin:0;
+}
+html,body{
+  height: 100%;
+}
+body{
+  padding: 10px;
+  margin: 0;
+}
+/*public style*/
+.yzpButton,.yzpInput,.yzpCheckbox,.yzpRadio,.yzpSelect,.yzpCheckbuttons,.yzpRadiobuttons{
+  font-family: "微软雅黑";
+}
+.small{
+  font-size: 14px;
+}
+.middle{
+  font-size: 20px;
+}
+.large{
+  font-size:30px;
+}
+.solid{
+  color: white;
+  background-color: rgb(100,220,220);
+  border: 1px solid rgb(100,220,220);
+}
+.hollow{
+  color:rgb(100,200,200);
+  border: 1px solid rgb(100,200,200);
+}
+.metaphor{
+color:white;
+background: linear-gradient(rgb(100,230,230),rgb(100,200,200));
+border: 1px solid rgb(100,190,190);
+}
+.smallRadius{
+border-radius: 5px;
+}
+.bigRadius{
+border-radius: 50px;
+}
+.solid:hover{
+  background-color: rgb(100,230,230);
+}
+
+.hollow:hover{
+  border: 1px solid rgb(100,230,230);
+}
+.metaphor:hover{
+  background: linear-gradient(rgb(100,200,200),rgb(100,230,230));
+}
+.masking{
+  background-color:rgba(10,10,10,0.9);
+  height:100%;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+  /*button style*/
+button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin:10px 10px 10px 0;
+  }
+.yzpButton{
+    padding: 10px 30px;
+  }
+/*input style*/
+input{
+  background-color: white;
+  border: none;
+}
+.inputWrap{
+  position:relative;
+}
+.yzpInput{
+  width: 98%;
+  padding:10px 1%;
+  margin: 5px 0;
+}
+.inputWrap i{
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+  right:10px;
+  height: 10px;
+  line-height: 10px;
+  cursor: pointer;
+  color: rgb(100,100,100);
+}
+.yzpInput:hover{
+  border: 1px solid rgb(100,230,230);
+}
+.yzpDatalist{
+  margin: 5px 0;
+  padding:0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(100,200,200);
+  list-style: none;
+  color:white;
+  box-shadow: 1px 1px 2px rgb(100,200,200);
+}
+.yzpDatalist li{
+  padding:10px 1%;
+}
+.yzpDatalist:before{
+  content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 11px solid rgb(100,200,200);
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+  position: absolute;
+  top:-10px;
+  left:10px;
+}
+.yzpDatalist li:hover{
+  background-color: #82878f;
+  color:white;
+  cursor: pointer;
+}
+/*number input style*/
+.yzpNumber button{
+  border: 1px solid rgb(100,200,200);
+  background:rgb(100,200,200);
+  color: white;
+  cursor: pointer;
+  margin-right: 0;
+}
+.yzpNumber input{
+  border: 1px solid rgb(100,200,200);
+}
+.yzpNumber span{
+  color:rgb(250,150,150);
+}
+
+/*checkbox style*/
+.yzpCheckbox{
+  padding: 2px;
+  cursor: pointer;
+  color: rgb(100,200,200);
+  font-weight:900;
+  font-family: "黑体";
+  text-align:center;
+}
+.yzpCheckbuttons{
+   color:  #82878f;
+}
+.yzpCheckbuttons button{
+  margin-top: 5px;
+}
+/*radio style*/
+.yzpRadio{
+  padding: 2px;
+  cursor: pointer;
+  color: rgb(100,200,200);
+  font-family: "黑体";
+}
+.yzpRadiobuttons{
+  color:  #82878f;
+}
+.yzpRadiobuttons button{
+  margin-top: 5px;
+}
+/*selector style*/
+.yzpSelect{
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.yzpSelect i{
+    position: absolute;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    line-height: 10px;
+    color: rgb(100,100,100) !important;
+    z-index: 1;
+}
+.yzpSelect input{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.yzpSelect input:focus{
+	outline: none;
+}
+
+.yzpSelect ul{
+  position:absolute;
+  width: 100%;
+	z-index: 1;
+  color: white;
+	background-color: rgb(100,200,200);
+	list-style: none;
+  padding: 0;
+  margin: 10px 0;
+	box-shadow: 1px 1px 2px rgb(100,200,200);
+}
+.yzpSelect ul:before{
+  content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 11px solid rgb(100,200,200);
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+  position: absolute;
+  top:-10px;
+  left:10px;
+}
+.yzpSelect ul li{
+	padding: 10px;
+}
+.yzpSelect ul li:hover{
+  background-color: #82878f;
+  color:white;
+}
+/*dropmenu style*/
+.yzpDropmenu{
+  display: inline-block;
+  position: relative;
+}
+.yzpDropmenu button{
+  position: relative;
+}
+.yzpDropmenu button:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 6px solid  #82878f;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+  right: 15px;
+}
+.yzpDropmenu ul{
+  z-index: 1;
+  width: 100%;
+	padding:0;
+	margin:0;
+  color: white;
+	list-style:none;
+	box-shadow:1px 1px 2px  rgb(100,200,200);
+	border-radius:2px;
+  background-color: rgb(100,200,200);
+  position: absolute;
+}
+.yzpDropmenu ul li{
+  padding: 10px;
+}
+.yzpDropmenu ul:before{
+  content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 11px solid rgb(100,200,200);
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+  position: absolute;
+  top:-10px;
+}
+.yzpDropmenu ul li:hover{
+    background-color: #82878f;
+    color:white;
+}
+/*datePick style*/
+.yzpDatepickerwrap{
+	position: relative;
+}
+.yzpDatepickerwrap i{
+    position: absolute;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    line-height: 10px;
+    color: rgb(100,100,100);
+}
+.yzpDatepicker{
+	position: absolute;
+	width: 230px;
+	background-color: rgb(100,200,200);
+	box-shadow: 1px 1px 2px rgb(100,200,200);
+	padding: 10px;
+	height: 250px;
+	z-index: 1;
+	top:55px;
+}
+.yzpDatepicker:before{
+	content: '';
+	height: 0;
+	width: 0;
+	border-bottom: 11px solid rgb(100,200,200);
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	position: absolute;
+	top:-10px;
+}
+.yzpDatepicker h3{
+	margin: 5px;
+	font-size: 18px;
+	color: white;
+}
+.pickerHead{
+	text-align: center;
+
+}
+.pickerHead button{
+	height: 20px;
+	width:30px;
+	border: none;
+	background: none;
+	color: white;
+  margin: 0;
+}
+
+.pickerHead span{
+	color: rgb(240,240,240);
+	font-weight: 900;
+}
+
+.pickerBody button{
+	background: none;
+	width: 38px;
+	height: 30px;
+	border: none;
+	color: white;
+  margin: 0;
+}
+.yzpDatepicker button:hover{
+  background-color: #82878f;
+  color:white;
+}
+
+.yzpDatepickerwrap input{
+	cursor: pointer;
+}
+/*drogbox style*/
+.yzpDragbox{
+	position: absolute;;
+	width:50%;
+	min-width: 500px;
+	height: 600px;
+	color:white;
+	font-family: "微软雅黑";
+	overflow: hidden;
+  background-color:rgb(100,100,100);
+}
+
+.yzpDragbox header{
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: move;
+	-webkit-user-select:none;
+}
+
+.yzpDragbox header span{
+	float:right;
+	margin-right:20px;
+	cursor: pointer;
+}
+
+.yzpDragbox iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/*pageturn style*/
+.yzpPageturn{
+  margin:10px 0;
+}
+.yzpPageturn button{
+  padding: 10px;
+  margin: 0;
+}
+.yzpPageturn ul{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.yzpPageturn ul li{
+  display: inline-block;
+}
+/*alert style*/
+.yzpAlert{
+  height: 300px;
+  width: 500px;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  background: linear-gradient(rgb(100,200,200),rgb(100,230,230));
+  padding: 10px;
+  border-radius: 10px;
+}
+.yzpAlert h2{
+  color: white;
+  height: 160px;
+  padding: 10px;
+}
+.yzpAlert button{
+  float: right;
+}
+.yzpCancel{
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid white;
+  color:white;
+}
+
+.yzpConfirm{
+  color:rgb(100,200,200);
+}
+/*range style*/
+.yzpRange canvas{
+	border:1px solid rgb(100,200,200);
+  cursor: pointer;
+  float:left;
+}
+.yzpRange span{
+  padding:0 5px;
+  text-align: center;
+  min-width: 20px;
+  float:left;
+  border:1px solid rgb(100,200,200);
+  color: rgb(100,100,100);
+}
+/*upload file style*/
+.yzpFile{
+  margin:10px 0;
+}
+.yzpFile label {
+  color: #646464;
+  font-weight: 900;
+  margin-right: 5px; }
+.yzpFile input {
+  opacity: 0;
+  width: 150px;
+  cursor: pointer; }
+.yzpFile span {
+  border: 1px solid #64dcdc;
+  border-radius: 5px;
+  padding: 5px; }
+  .yzpFile span i {
+    color: #646464; }
+/*colorPicker style*/
+.yzpColorpicker{
+  margin:10px 0;
+}
+.yzpColorpicker label {
+  color: #646464;
+  font-weight: 900;
+  margin-right: 5px; }
+.yzpColorpicker button {
+  color: white;
+  text-align: right;
+  width: 150px;
+  background: linear-gradient(to left,rgb(100,200,200),rgb(100,250,200));
+  border-radius: 5px;
+  padding: 5px; }
+.yzpColorpicker span i {
+    color: #646464; }
+.yzpColorbox{
+      position: fixed;
+      top:0;
+      bottom: 0;
+      left:0;
+      right:0;
+      margin: auto;
+      height: 600px;
+      width: 560px;
+      background-color: white;
+      text-align: right;
+      padding-right: 2px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+.yzpColorbox input{
+      width:100px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: rgb(50,50,50);
+      color: white;
+    }
+
+.yzpColorbox label{
+      color: rgb(50,50,50);
+    }
+.yzpColorbox button{
+      background: white;
+      padding: 10px;
+      border: none;
+      color: rgb(50,50,50);
+      cursor: pointer;
+    }
+
+/*# sourceMappingURL=yzpFile.css.map */
